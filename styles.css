@@ -1,0 +1,70 @@
+/* horizontal navbar: https://www.w3schools.com/css/css_navbar_horizontal.asp */
+
+body {
+    background: #fff8ed;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px 20px;
+}
+
+.title {
+    font-size: 50px;
+    color: #2273f3;
+}
+
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2273f3;
+}
+
+
+.current {
+    background-color: #e1dbd3;
+    color: #2273f3;
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+li a {
+    float: left;
+
+    background: #2273f3;
+    color: #fff8ed;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: #fff8ed;
+    color: #2273f3
+}
+
+/* slide animation citation: https://www.html.am/html-codes/marquees/css-slide-in-text.cfm */
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: fromLeft 1s ease-out;
+  -webkit-animation: fromLeft 1s ease-out;
+}
